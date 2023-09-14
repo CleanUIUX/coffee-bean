@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../slick.css">
+    <!-- <link rel="stylesheet" href="slick-theme.css"> -->
+    <title>COFFEE BEAN KOREA</title>
+    <script src="../jquery-3.7.0.min.js"></script>
+    <script src="./common.js"></script>
+    <script src="../slick.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="member_wrap">
+            <div class="inner">
+                <div class="txt">
+                    <p><strong>로그인</strong>을 하시면 커피빈 멤버스 클럽의 <strong>다양한혜택</strong>을 받으실 수 있습니다.</p>
+                </div>
+                <div class="btn_wrap">
+                    <button type="submit">로그인</button>
+                    <button type="submit">회원가입</button>
+                </div>
+            </div>
+        </div>
+        <div class="util">
+            <div class="inner">
+                <ul>
+                    <li><a href="javascript:;" target="_blank">로그인</a></li>
+                    <li><a href="javascript:;" target="_blank">매장찾기</a></li>
+                    <li><a href="javascript:;" target="_blank">채용정보</a></li>
+                    <li><a href="javascript:;" target="_blank">단체 및 기업구매</a></li>
+                    <li><a href="javascript:;" target="_blank">고객서비스</a></li>
+                    <li><button type="button" class="btn_login"></button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner">
+            <h1 class="logo"><a href="javascript:;">coffee-bin</a></h1>
+            <div class="gnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="javascript:;">BUY ONLINE</a>
+                        <div class="depth2 buy">
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">View All</a>
+                            </div>
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">스틱 커피</a>
+                                <ul>
+                                    <li><a href="javascript:;" target="_blank">스틱 커피</a></li>
+                                </ul>
+                            </div>
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">분쇄형 커피</a>
+                                <ul>
+                                    <li><a href="javascript:;" target="_blank">드립백</a></li>
+                                </ul>
+                            </div>
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">캡슐 커피</a>
+                                <ul>
+                                    <li><a href="javascript:;" target="_blank">네스프레소 호환용</a></li>
+                                    <li><a href="javascript:;" target="_blank">CBTL 호환용</a></li>
+                                </ul>
+                            </div>
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">원두</a>
+                                <ul>
+                                    <li><a href="javascript:;" target="_blank">원두 가이드</a></li>
+                                    <li><a href="javascript:;" target="_blank">라이트 로스트</a></li>
+                                </ul>
+                            </div>
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">티</a>
+                                <ul>
+                                    <li><a href="javascript:;" target="_blank">티 가이드</a></li>
+                                    <li><a href="javascript:;" target="_blank">클래식티</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">MEMBER`S CLUB</a>
+                        <div class="depth2">
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">커피빈 멤버스 클럽</a>
+                                <ul>
+                                    <li><a href="javascript:;"target="_blank">멤버스 클럽</a></li>
+                                    <li><a href="javascript:;"target="_blank">커피빈 카드</a></li>
+                                    <li><a href="javascript:;"target="_blank">커피빈 e-Gift</a></li>
+                                </ul>
+                            </div>
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">커나의 커피빈</a>
+                                <ul>
+                                    <li><a href="javascript:;"target="_blank">멤나의 콩/e쿠폰보기</a></li>
+                                    <li><a href="javascript:;"target="_blank">나의 커피빈 카드</a></li>
+                                    <li><a href="javascript:;"target="_blank">커피빈 카드 등록</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">MENU</a>
+                        <div class="depth2">
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">음료</a>
+                                <ul>
+                                    <li><a href="javascript:;"target="_blank">신음료</a></li>
+                                    <li><a href="javascript:;"target="_blank">에스프레소 음료</a></li>
+                                    <li><a href="javascript:;"target="_blank">브루드 커피</a></li>
+                                </ul>
+                            </div>
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">푸드</a>
+                                <ul>
+                                    <li><a href="javascript:;"target="_blank">베이커리</a></li>
+                                    <li><a href="javascript:;"target="_blank">홀케익</a></li>
+                                    <li><a href="javascript:;"target="_blank">기타</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">STORE & 서비스</a>
+                        <div class="depth2">
+                            <div class="depth2_list">
+                                <ul>
+                                    <li><a href="javascript:;"target="_blank">케이터링 서비스</a></li>
+                                    <li><a href="javascript:;"target="_blank">매장 찾기</a></li>
+                                    <li><a href="javascript:;"target="_blank">신규 매장</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">THE COFFEE BEAN</a>
+                        <div class="depth2">
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">커피빈 코리아</a>
+                                <ul>
+                                    <li><a href="javascript:;"target="_blank">Simply the Best</a></li>
+                                    <li><a href="javascript:;"target="_blank">커피빈 커피와 티</a></li>
+                                </ul>
+                            </div>
+                            <div class="depth2_list">
+                                <a href="javascript:;" class="tit">커피빈 소식</a>
+                                <ul>
+                                    <li><a href="javascript:;"target="_blank">프로모션</a></li>
+                                    <li><a href="javascript:;"target="_blank">공지사항</a></li>
+                                    <li><a href="javascript:;"target="_blank">소셜미디어</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">CBTL</a>
+                        <div class="depth2">
+                            <div class="depth2_list">
+                                <ul>
+                                    <li><a href="javascript:;"target="_blank">CBTL 가이드</a></li>
+                                    <li><a href="javascript:;"target="_blank">CBTL 서비스</a></li>
+                                    <li><a href="javascript:;"target="_blank">AS 안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_search">
+                <button type="button">검색버튼</button>
+            </div>
+            <div class="search_box">
+                <form action="javascript:;">
+                    <fieldset>
+                        <legend>여기에 검색하세요</legend>
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button>search</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--// header -->
+    <!-- main-contents -->
+    <div class="main_contents">
+        <div class="main_img">
+            <img src="/coffee-bean/img/main_banner01.jpeg" alt="메인배너">
+            <img src="/coffee-bean/img/main_banner02.jpeg" alt="메인배너">
+        </div>
+        <div class="inner">
+            <!-- 상품 리스트 -->
+            <div class="prd_wrap">
+                <h2>MD'S PICK</h2>
+                <div class="prd_list">
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="prd_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/prd01.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">바닐라 파우더 907g</p>
+                                    <p class="price">18,900원</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="prd_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/prd02.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">헤이즐넛 파우더 907g</p>
+                                    <p class="price">18,900원</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="prd_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/prd03.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">Tin.잉글리쉬 브랙퍼스트 10T</p>
+                                    <p class="price">16,800원</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="prd_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/prd04.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">Tin.아프리칸 선라이즈 10T</p>
+                                    <p class="price">16,800원</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="prd_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/prd05.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">모카웨하스 63g</p>
+                                    <p class="sub_name">모카 웨하스</p>
+                                    <p class="price">1,900원</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:;">
+                            <div class="prd_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/prd04.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">Tin.아프리칸 선라이즈 10T</p>
+                                    <p class="price">16,800원</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_pause">play/pause</button>
+                </div>
+            </div>
+            <!--// 상품 리스트 -->
+            <!-- 소식 리스트 -->
+            <div class="news_wrap">
+                <h2>What's new</h2>
+                <div class="news_list">
+                    <div class="news_con">
+                        <a href="javascript:;">
+                            <div class="news_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/news01.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">2023 05 조청 약과 케익</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news_con">
+                        <a href="javascript:;">
+                            <div class="news_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/news02.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">2023 02 건강한 한 끼</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news_con">
+                        <a href="javascript:;">
+                            <div class="news_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/news03.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">2023 04 Blooming Bouquet</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news_con">
+                        <a href="javascript:;">
+                            <div class="news_content">
+                                <div class="img_box">
+                                    <img src="/coffee-bean/img/news04.jpeg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <p class="name">2023 02 Macchiatone</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_pause">play/pause</button>
+                </div>
+            </div>
+            <!--// 소식 리스트 -->
+        </div>
+        <!-- instagram -->
+        <div class="instagram_wrap">
+            <h2>#커피빈코리아 #커피빈맛있다 #커피빈사랑해</h2>
+            <div class="con_box">
+                <ul>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg01.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg02.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg03.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg04.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg05.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg06.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg06.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg05.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg04.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg03.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg02.jpeg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="/coffee-bean/img/insta_bg01.jpeg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn_wrap">
+                    <a href="javascript:;" target="_blank" class="btn_insta">OUR INSTAGRAM - @COFFEEBEAN_KR</a>
+                </div>
+            </div>
+        </div>
+        <!--// instagram -->
+    </div>
+    <!--// main-contents -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="inner">
+            <div class="site_map">
+                <ul class="list">
+                    <li>
+                        <h3>Buy Online</h3>
+                        <ul class="sub_list">
+                            <li>
+                                <a href="javascript:;" target="_blank">VIEW ALL</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">커피</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">티</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">CBTL 시스템</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">CBTL 시스템</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Member`s Club</h3>
+                        <ul class="sub_list">
+                            <li>
+                                <a href="javascript:;" target="_blank">커피빈 멤버스 클럽</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">나의 커피빈</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Menu</h3>
+                        <ul class="sub_list">
+                            <li>
+                                <a href="javascript:;" target="_blank">음료</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">푸드</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">상품</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">카드</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Store & 서비스</h3>
+                        <ul class="sub_list">
+                            <li>
+                                <a href="javascript:;" target="_blank">케이터링 서비스</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">매장 찾기</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">신규 매장</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>The Coffee Bean</h3>
+                        <ul class="sub_list">
+                            <li>
+                                <a href="javascript:;" target="_blank">커피빈 코리아</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">커피빈 소식</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">사회공헌</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">제휴 마케팅 제안</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">채용안내</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>CBTL</h3>
+                        <ul class="sub_list">
+                            <li>
+                                <a href="javascript:;" target="_blank">CBTL 가이드</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">CBTL 서비스</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">AS 안내</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">AS 신청</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">CBTL FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <div class="sns_box">
+                    <a href="javascript:;" target="_blank" class="facebook"><span>FACEBOOK</span></a>
+                    <a href="javascript:;" target="_blank" class="insta"><span>INSTAGRAM</span></a>
+                    <a href="javascript:;" target="_blank" class="blog"><span>BLOG/span></a>
+                    <a href="javascript:;" target="_blank" class="twitter"><span>TWITTER</span></a>
+                </div>
+                <div class="info">
+                    <ul class="term">
+                        <li><a href="javascript:;" target="_blank">홈페이지 이용약관</a></li>
+                        <li><a href="javascript:;" target="_blank" class="personal">개인정보처리방침</a></li>
+                        <li><a href="javascript:;" target="_blank">영상정보처리기기운영방침</a></li>
+                        <li><a href="javascript:;" target="_blank">멤버스카드이용약관</a></li>
+                        <li><a href="javascript:;" target="_blank">위치기반서비스 이용약관</a></li> 
+                    </ul>
+                    <p class="address">
+                        (주)커피빈코리아 대표이사 감종철
+                        사업자등록번호 120-86-07029 
+                        통신판매업신고 제 2010-서울강남-00560<br>
+                        서울시 강남구 봉은사로 99길 7 
+                        고객센터 02-1577-4708 (09:00  - 18:00) 
+                        E-mail : cbk@coffeebeankorea.com <br>
+                        ⓒ 2021. The Coffee Bean. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--// footer -->
+    <!-- floting_top -->
+    <div class="floting_top">
+        <button type="button"><span>floting_top</span></button>
+    </div>
+    <!--// floting_top -->
+</body>
+</html>
