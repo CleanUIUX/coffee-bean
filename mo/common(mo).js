@@ -21,6 +21,16 @@ $(document).ready(function(){
     speed: 1000,
     pauseOnHover: true,
   });
+
+  $(".btn_pause").on("click", function(e){
+    if($(".btn_pause").hasClass("on")){
+      $(".btn_pause").removeClass("on");
+      $(".prd_list").slick("slickPause");
+    }else{
+      $(".btn_pause").addClass("on");
+      $(".prd_list").slick("slickPlay");
+    }
+  })
 });
 
 // 메뉴 클릭 시 오픈
