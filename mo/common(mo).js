@@ -41,7 +41,14 @@ var menuClick = function(){
   }else{
     $(".gnb").addClass("on");
     $(".wrap").addClass("move");
-  }
+  };
+
+  // dim처리
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  
+  $(".dim").css({"width" : maskWidth, "height" : maskHeight});
+  console.log(maskWidth);
 }
 $(document).on("click", ".menu_trigger", function(){
   menuClick();
@@ -94,7 +101,6 @@ $(document).ready(function(){
     }
   })
 })
-
 
 // 
     // var $depth2B = $('.depth2_box');
