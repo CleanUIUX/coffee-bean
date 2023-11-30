@@ -44,11 +44,11 @@ var menuClick = function(){
   };
 
   // dim처리
-  var maskHeight = $(document).height();
-  var maskWidth = $(window).width();
-  
-  $(".dim").css({"width" : maskWidth, "height" : maskHeight});
-  console.log(maskWidth);
+  function openPopup(modalname){
+    document.get
+    $('.' + modalname).show();
+    $(".dim").show(); // dim 처리
+  }
 }
 $(document).on("click", ".menu_trigger", function(){
   menuClick();

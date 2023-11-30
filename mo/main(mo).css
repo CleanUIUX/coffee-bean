@@ -4,6 +4,7 @@ h2{margin-bottom:25px;font-size:18px;font-weight:500;color:rgb(207,102,26);text-
 .wrap.move .main_contents{margin-top:0;}
 .wrap.move .menu_trigger{position:fixed;left:280px;}
 .dim{position:fixed;}
+
 /* header */
 header{position:fixed;top:0;left:0;width:100%;height:60px;border-bottom:1px solid rgb(238,238,238);background:rgb(255,255,255); z-index:99;}
 header .menu_trigger{position:absolute;top:20px;left:20px;width:20px;height:20px;}
