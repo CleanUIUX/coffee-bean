@@ -100,8 +100,6 @@ header .util .cart{background:url(../img/ico_bag_m.png) no-repeat 50% 50%;backgr
 .insta_wrap{margin-top:40px;background:rgb(124,81,161);}
 .insta_wrap .insta_inner{padding:20px 20px 40px;}
 .insta_wrap h2{color:#fff;}
-/* .insta_wrap ul::after{content:'';display:block;clear:both;} */
-/* .insta_wrap ul li{float: left;width:106px;} */
 .insta_wrap ul{width:auto;margin-bottom:20px;}
 .insta_wrap ul::after{content:'';display:block;clear:both;}
 .insta_wrap ul li{float:left;width:33.3%;}
@@ -125,3 +123,22 @@ footer .info a::after{content:'';display:block;position:absolute;top:50%;right:0
 footer .info a:last-of-type:after{content:none;}
 
 footer .address{margin-top:15px;font-size:13px;color:rgb(95,77,63);line-height:24px;text-align:center;}
+
+
+/* ----------------------------- 미디어쿼리 시작 ----------------------------- */
+
+/* ***************************** 767 이상 [s]***************************** */
+@media screen and (min-width:767px) {
+    /* 메인이미지 */
+
+
+    /* MD'S PICK */
+    .main_contents .prd_wrap .prd_list .item .img_box{width:auto;}
+    .main_contents .prd_wrap .prd_list .item .txt_box .name{font-size:18px;}
+    
+    /* 푸터 */
+    footer .info br{content:'';}
+}
+/* ***************************** 767 이상 [e]***************************** */
+
+/* ----------------------------- 미디어쿼리 끝 ----------------------------- */

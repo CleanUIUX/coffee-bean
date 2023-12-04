@@ -1,6 +1,7 @@
 $(document).ready(function(){
   // slide
-  $('.prd_list').slick({
+  if($(window).width() < 767) {
+    $('.prd_list').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: false,
@@ -21,7 +22,19 @@ $(document).ready(function(){
     speed: 1000,
     pauseOnHover: true,
   });
-
+}else{
+  $('.prd_list').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: false,
+    dots: true,
+    arrows : false,
+    autoplaySpeed: 1000,
+    speed: 1000,
+    pauseOnHover: true,
+  });
+  
+}
   $(".btn_pause").on("click", function(e){
     if($(".btn_pause").hasClass("on")){
       $(".btn_pause").removeClass("on");
