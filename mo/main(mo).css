@@ -71,7 +71,9 @@ header .util .cart{background:url(../img/ico_bag_m.png) no-repeat 50% 50%;backgr
 
 /* main_contents */
 .main_contents{margin-top:60px;}
-.main_contents .main_img img{display:block;width:100%;}
+.main_contents .main_img.ver_mo{display:block;}
+.main_contents .main_img.ver_mo img{display:block;width:100%;}
+.main_contents .main_img.ver_pc{display:none;}
 .main_contents .m_inner{overflow:hidden;margin:35px 20px 0;}
 
 /* prd_wrap */
@@ -98,7 +100,7 @@ header .util .cart{background:url(../img/ico_bag_m.png) no-repeat 50% 50%;backgr
 
 /* insta */
 .insta_wrap{margin-top:40px;background:rgb(124,81,161);}
-.insta_wrap .insta_inner{padding:20px 20px 40px;}
+.insta_wrap .insta_inner{padding:20px 20px 40px;text-align:center;}
 .insta_wrap h2{color:#fff;}
 .insta_wrap ul{width:auto;margin-bottom:20px;}
 .insta_wrap ul::after{content:'';display:block;clear:both;}
@@ -106,7 +108,7 @@ header .util .cart{background:url(../img/ico_bag_m.png) no-repeat 50% 50%;backgr
 .insta_wrap ul li a{display:block;}
 .insta_wrap ul li img{display:block;width:100%;}
 
-.insta_wrap .btn_insta{display:block;width:100%;height:30px;background:rgb(243,130,0);font-size:13px;color:#fff;line-height:30px;text-align:center;}
+.insta_wrap .btn_insta{display:inline-block;max-width:400px;width:100%;height:40px;background:rgb(243,130,0);font-size:13px;color:#fff;line-height:40px;text-align:center;letter-spacing:1px;}
 
 /* footer */
 footer{padding:30px 0;background:rgb(226,226,226);}
@@ -129,13 +131,20 @@ footer .address{margin-top:15px;font-size:13px;color:rgb(95,77,63);line-height:2
 
 /* ***************************** 767 이상 [s]***************************** */
 @media screen and (min-width:767px) {
+    h2{font-size:24px;}
+    .d_none{display:none;}
     /* 메인이미지 */
-
-
+    .main_contents .main_img.ver_mo{display:none;}
+    .main_contents .main_img.ver_pc{display:block;}
+    .main_contents .main_img.ver_pc img{display:block;width:100%;}
     /* MD'S PICK */
     .main_contents .prd_wrap .prd_list .item .img_box{width:auto;}
-    .main_contents .prd_wrap .prd_list .item .txt_box .name{font-size:18px;}
-    
+    .main_contents .prd_wrap .prd_list .item .txt_box .name{font-size:18px;font-weight:700;margin-top:25px;}
+    /* What's new */
+    .main_contents .news_wrap .news_list .news_content .txt_box{margin-top:25px;}
+    /* insta */
+    .insta_wrap ul{width:600px;margin:0 auto 20px;}
+    .insta_wrap ul li{width:200px;}
     /* 푸터 */
     footer .info br{content:'';}
 }

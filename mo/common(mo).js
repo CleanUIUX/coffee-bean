@@ -1,29 +1,6 @@
 $(document).ready(function(){
   // slide
-  if($(window).width() < 767) {
     $('.prd_list').slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: false,
-    dots: true,
-    arrows : false,
-    autoplaySpeed: 1000,
-    speed: 1000,
-    pauseOnHover: true,
-  });
-
-  $('.news_list').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    dots: true,
-    arrows : false,
-    autoplaySpeed: 1000,
-    speed: 1000,
-    pauseOnHover: true,
-  });
-}else{
-  $('.prd_list').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: false,
@@ -32,9 +9,36 @@ $(document).ready(function(){
     autoplaySpeed: 1000,
     speed: 1000,
     pauseOnHover: true,
+    responsive: [ // 반응형 웹 구현
+      {
+        breakpoint: 767, // 화면 사이즈 767px
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      }
+    ] 
   });
-  
-}
+
+  $('.news_list').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: false,
+    dots: true,
+    arrows : false,
+    autoplaySpeed: 1000,
+    speed: 1000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
   $(".btn_pause").on("click", function(e){
     if($(".btn_pause").hasClass("on")){
       $(".btn_pause").removeClass("on");
