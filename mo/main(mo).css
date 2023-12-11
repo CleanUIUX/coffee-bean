@@ -112,6 +112,7 @@ header .util .cart{background:url(../img/ico_bag_m.png) no-repeat 50% 50%;backgr
 
 /* footer */
 footer{padding:30px 0;background:rgb(226,226,226);}
+footer .depth3{display:none;}
 footer .sns_box{display:flex;justify-content:center;}
 footer .sns_box a{display:block;width:40px;height:40px;margin-right:10px;text-indent:-999px;}
 footer .sns_box .facebook{background:url(../img/ico_facebook.png) no-repeat 50% 50%;}
@@ -149,5 +150,17 @@ footer .address{margin-top:15px;font-size:13px;color:rgb(95,77,63);line-height:2
     footer .info br{content:'';}
 }
 /* ***************************** 767 이상 [e]***************************** */
+
+/* ***************************** 1200 이상 [s]***************************** */
+@media screen and (min-width: 1200px){
+    /* 푸터 */
+    footer{padding:0;}
+    footer .depth3{display:block;width:1200px;margin:0 auto 30px;padding:55px 0 50px 0;border-bottom:1px solid rgb(75, 38, 22);}
+    footer .depth3 .depth3_list{display:flex;justify-content:center;}
+    footer .depth3 .depth3_list p{margin-bottom:20px;font-size:18px;color:rgb(207, 102, 26);}
+
+}
+/* ***************************** 1200 이상 [e]***************************** */
+
 
 /* ----------------------------- 미디어쿼리 끝 ----------------------------- */
